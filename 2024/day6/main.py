@@ -178,16 +178,10 @@ def part2():
             lst[pos[1]] = "O"
             copy[pos[0]] = "".join(lst)
 
-            print(pos)
-
             if isStuck(copy):
                 stuck += 1
 
     return stuck
-
-
-
-
 
 print(len(part1()))
 print(part2())
