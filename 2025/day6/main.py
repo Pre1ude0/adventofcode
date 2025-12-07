@@ -27,13 +27,9 @@ def part2():
     opLines = lines[:-1]
     operations = []
 
-    j = 0
     newOp = []
     longestLine = max(len(line) for line in opLines)
-    while True:
-        if j >= longestLine:
-            break
-
+    for j in range(longestLine):
         number = ""
         for i in range(len(opLines)):
             if j < len(opLines[i]) and opLines[i][j] != " ":
@@ -44,8 +40,6 @@ def part2():
             newOp = []
         else:
             newOp.append(int(number))
-
-        j += 1
 
     total = 0
     for o in range(len(operations)):
