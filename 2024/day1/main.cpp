@@ -31,11 +31,11 @@ int part1() {
 	std::vector<int> right;
 
 	for (const std::string i : pairs) {
-    std::istringstream iss(i);
-    std::string part1, part2;
-    iss >> part1 >> part2;
-    left.push_back(std::stoi(part1));
-    right.push_back(std::stoi(part2));
+        std::istringstream iss(i);
+        std::string part1, part2;
+        iss >> part1 >> part2;
+        left.push_back(std::stoi(part1));
+        right.push_back(std::stoi(part2));
 	}
 
 	sort(right.begin(), right.end());
